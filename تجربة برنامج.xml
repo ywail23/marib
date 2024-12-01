@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="2.0">
+	<xsl:template match="/" />
+	<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@drawable/background_image">
+		<TextView android:id="@+id/appName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="اسم البرنامج" android:textSize="24sp" android:layout_marginTop="50dp" android:layout_centerHorizontal="true" android:textColor="@android:color/white" />
+		<EditText android:id="@+id/usernameField" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="اسم المستخدم" android:layout_margin="16dp" android:layout_below="@id/appName" />
+		<EditText android:id="@+id/passwordField" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="كلمة المرور" android:layout_below="@id/usernameField" android:layout_margin="16dp" android:inputType="textPassword" />
+		<Button android:id="@+id/loginButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="تسجيل الدخول" android:layout_below="@id/passwordField" android:layout_margin="16dp" />
+		<Button android:id="@+id/registerButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="إنشاء حساب جديد" android:layout_below="@id/loginButton" android:layout_margin="16dp" />
+	</RelativeLayout>
+</xsl:stylesheet>
